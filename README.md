@@ -3,7 +3,6 @@
 ![AWS](https://img.shields.io/badge/AWS-Certified-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![IA](https://img.shields.io/badge/AI-Practitioner-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![Idioma](https://img.shields.io/badge/Idioma-Español-blue?style=for-the-badge)
-![Preguntas](https://img.shields.io/badge/Preguntas-65-green?style=for-the-badge)
 ![Estado](https://img.shields.io/badge/Estado-Activo-brightgreen?style=for-the-badge)
 
 > Material de preparación completo para el examen **AWS Certified AI Practitioner (AIF-C01)** en español.  
@@ -16,10 +15,8 @@
 ```
 aws-aif-c01-prep/
 ├── README.md                          ← Este archivo
-├── guia-teorica/
-│   └── sustento-teorico-completo.md  ← Marco teórico completo AIF-C01
-└── practica/
-    └── 65-preguntas-respuestas.md    ← 65 preguntas con respuestas y explicaciones
+└── guia-teorica/
+    └── sustento-teorico-completo.md  ← Marco teórico completo AIF-C01
 ```
 
 ---
@@ -43,29 +40,6 @@ El archivo [`guia-teorica/sustento-teorico-completo.md`](./guia-teorica/sustento
 | 11 | Gobernanza y Seguridad | IAM, CloudTrail, Artifact, residencia de datos |
 | 12 | Vision por Computadora | Object detection, NER, anomalias |
 | 13 | Glosario | 20+ terminos clave del examen |
-
----
-
-## 🧪 Preguntas de Practica
-
-El archivo [`practica/65-preguntas-respuestas.md`](./practica/65-preguntas-respuestas.md) contiene **65 preguntas** organizadas por dominio, cada una con:
-
-- ✅ Alternativa correcta claramente marcada
-- 📖 Explicacion detallada del concepto
-- ❌ Razon por la que las otras alternativas son incorrectas
-
-### Distribucion por dominio
-
-| Preguntas | Dominio |
-|-----------|---------|
-| 1 – 5 | Conceptos fundamentales de IA/ML |
-| 6 – 10 | Modelos Fundacionales y parametros |
-| 11 – 20 | Servicios AWS de IA |
-| 21 – 30 | Amazon Bedrock y Agentes |
-| 31 – 40 | Personalizacion y Fine-Tuning |
-| 41 – 50 | Prompt Engineering |
-| 51 – 58 | Evaluacion, Metricas y Monitoreo |
-| 59 – 65 | Gobernanza, Seguridad y Responsabilidad |
 
 ---
 
@@ -138,9 +112,8 @@ Segun la guia oficial de AWS, el examen cubre:
 ## 🚀 Como usar este repositorio
 
 1. **Lectura teorica**: Comienza con `guia-teorica/sustento-teorico-completo.md`
-2. **Practica**: Responde las preguntas en `practica/65-preguntas-respuestas.md` **antes** de ver la respuesta
-3. **Repaso rapido**: Usa las tablas de referencia de este README como cheatsheet
-4. **Puntos debiles**: Identifica los dominios donde cometes mas errores y vuelve a la guia teorica
+2. **Repaso rapido**: Usa las tablas de referencia de este README como cheatsheet
+3. **Puntos debiles**: Identifica los dominios donde tienes dudas y vuelve a la guia teorica
 
 ---
 
