@@ -117,16 +117,6 @@ Segun la guia oficial de AWS, el examen cubre:
 
 ---
 
-## 📝 Sobre el Autor
-
-**Rodrigo Aguilar**  
-- Cloud Architect en NTT Data Chile  
-- AWS Authorized Instructor — LATAM  
-- Docente en DUOC UC (Infraestructura y Cloud Computing)  
-- +20 anos en infraestructura TI
-
----
-
 ## 📄 Licencia
 
 Material elaborado para uso educativo. Basado en la guia oficial del examen AWS Certified AI Practitioner (AIF-C01).
