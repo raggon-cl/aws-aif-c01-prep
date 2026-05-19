@@ -121,7 +121,7 @@ Segun la guia oficial de AWS, el examen cubre:
 
 Material elaborado para uso educativo. Basado en la guia oficial del examen AWS Certified AI Practitioner (AIF-C01).
 
-> **Nota:** Este repositorio es material de estudio independiente y no esta afiliado oficialmente a Amazon Web Services.
+> **Nota:** Este repositorio es material de estudio independiente, no afiliado ni endorsado por Amazon Web Services. AWS, Amazon Bedrock, SageMaker y los nombres de certificaciones son marcas registradas de Amazon.com, Inc.
 
 ---
 
