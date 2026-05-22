@@ -94,12 +94,14 @@ Los Large Language Models (LLMs) son un tipo especifico de modelo fundacional es
 
 **Arquitecturas clave mencionadas en el examen:**
 
-| Arquitectura | Uso Principal |
-|---|---|
-| GPT (Generative Pre-trained Transformers) | Interfaces conversacionales en lenguaje natural |
-| WaveNet | Generacion de audio y voz |
-| ResNet (Red Neuronal Residual) | Vision por computadora |
-| SVM (Support Vector Machine) | Clasificacion tradicional de ML |
+| Arquitectura | Tipo | Uso Principal |
+|---|---|---|
+| GPT (Generative Pre-trained Transformers) | LLM / IA Generativa | Interfaces conversacionales en lenguaje natural |
+| WaveNet | Red neuronal profunda | Generacion de audio y voz |
+| ResNet (Red Neuronal Residual) | CNN (vision por computadora) | Clasificacion y deteccion de imagenes |
+| SVM (Support Vector Machine) | ML clasico (no red neuronal) | Clasificacion binaria tradicional |
+
+> **Nota:** GPT y WaveNet son arquitecturas de IA generativa/deep learning. ResNet es una CNN para vision. SVM es un algoritmo de ML clasico anterior al deep learning — no usa redes neuronales. El examen puede preguntar por cualquiera de ellos en contexto de seleccion de arquitectura.
 
 ### 2.3 Tokens
 
@@ -276,8 +278,8 @@ Consulta → [Embedding] → Busqueda similitud → Contexto → [LLM] → Respu
             Paso 3           Paso 4             Paso 5
 ```
 
-**Pasos OFFLINE (batch sin conexion):** A y C — Generacion de embeddings + Creacion del indice  
-**Pasos ONLINE (tiempo real):** B, D, E — Embedding de consulta, Recuperacion, Generacion
+**Pasos OFFLINE (batch sin conexion):** Pasos 1 y 2 — Generacion de embeddings de documentos + Almacenamiento en Vector Store  
+**Pasos ONLINE (tiempo real):** Pasos 3, 4 y 5 — Embedding de la consulta, Busqueda por similitud, Generacion de respuesta con el LLM
 
 ### 5.3 Vector Stores para RAG en AWS
 
@@ -316,7 +318,7 @@ Amazon Bedrock es el servicio de AWS que pone a disposicion **modelos fundaciona
 
 | Modalidad | Descripcion | Cuando usar |
 |---|---|---|
-| On-Demand | Pago por tokens consumidos | Uso bajo o impredecible, pilotos |
+| On-Demand | Pago por tokens consumidos | Desarrollo, experimentacion, uso bajo o impredecible, pilotos |
 | Provisioned Throughput | Capacidad reservada con pago fijo | Produccion con carga predecible y alta |
 
 ### 7.3 Guardrails de Bedrock
@@ -396,7 +398,7 @@ Configuracion que **bloquea todo el trafico de red saliente** durante los jobs d
 | Inferencia en Tiempo Real | Endpoint activo, baja latencia | Predicciones individuales en produccion |
 | Batch Transform | Procesa grandes volumenes sin endpoint permanente | Datos archivados de gran tamano |
 | Inferencia Asincrona | Para payloads grandes con latencia tolerada | Solicitudes individuales grandes |
-| Inferencia sin Servidor | Sin gestion de instancias | Cargas de trabajo esporadicas |
+| Serverless Inference | Sin gestion de instancias; tiene cold start | Cargas de trabajo esporadicas con latencia tolerada |
 
 ---
 
@@ -613,7 +615,7 @@ Identifica patrones inusuales o fuera de lo normal en los datos. Se usa en mante
 | **Transfer Learning** | Reutilizar un modelo preentrenado como base para nuevas tareas |
 | **Data Augmentation** | Generar variaciones sinteticas de datos para ampliar el dataset |
 | **Continued Pre-training** | Seguir entrenando el modelo base con nuevos datos no etiquetados para mantenerlo actualizado |
-| **Instruction Tuning** | Fine-tuning con pares prompt-respuesta para ensena al modelo a seguir instrucciones |
+| **Instruction Tuning** | Fine-tuning con pares prompt-respuesta para enseñar al modelo a seguir instrucciones |
 | **RLHF** | Reinforcement Learning from Human Feedback: ajuste con retroalimentacion humana |
 | **pgvector** | Extension de PostgreSQL para almacenar y consultar vectores de embeddings |
 | **Data Drift** | Cambio en la distribucion de los datos de entrada en produccion |
